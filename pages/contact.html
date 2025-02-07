@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ExpressCargo</title>
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../assets/images/icon/icon.png">
+
+    <!-- Custom CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+
+    <style>
+        .contact-info-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-info-card:hover .contact-icon {
+            background: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="fas fa-truck-fast me-2"></i>ExpressCargo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero d-flex align-items-center position-relative">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white hero-content">
+                    <div class="hero-badge" data-aos="fade-down">
+                        <i class="fas fa-headset me-2"></i>24/7 Customer Support
+                    </div>
+                    <h1 class="fw-bold display-3 mb-4" data-aos="fade-up">Need Help? Let's Talk</h1>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                        Our dedicated team is here to assist you with any questions about our logistics and delivery
+                        services
+                    </p>
+                    <div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#contact-form" class="btn btn-light btn-lg px-4">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </a>
+                        <a href="tel:+621234567890" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-phone me-2"></i>Call Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Information Cards -->
+    <section class="py-5 mt-n5 position-relative">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Visit Us</h4>
+                        <p class="text-muted mb-0">Jl. Contoh No. 123, Jakarta, Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Call Us</h4>
+                        <p class="text-muted mb-0">+62 123 4567 890</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Email Us</h4>
+                        <p class="text-muted mb-0">info@expresscargo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light" id="contact-form">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="pe-lg-5">
+                        <h2 class="fw-bold mb-4">Send Us a Message</h2>
+                        <p class="text-muted mb-4">Kami siap membantu Anda. Silakan isi form di bawah ini dan tim kami
+                            akan segera menghubungi Anda.</p>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Nama</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Subjek</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Pesan</label>
+                                        <textarea class="form-control" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-container h-100">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.19650638404!2d106.82796399999999!3d-6.229728099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1659600000000!5m2!1sid!2sid"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact-button" onclick="scrollToContactForm()">
+        <i class="fas fa-comments fa-lg"></i>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-4" data-aos="fade-up">Frequently Asked Questions</h2>
+                    <p class="text-muted" data-aos="fade-up" data-aos-delay="100">Temukan jawaban atas pertanyaan yang
+                        sering diajukan</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Bagaimana cara melacak paket saya?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Anda dapat melacak paket dengan memasukkan nomor resi di website kami atau melalui
+                                    aplikasi mobile ExpressCargo.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Berapa lama waktu pengiriman standar?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Waktu pengiriman standar berkisar antara 2-3 hari kerja untuk wilayah Jabodetabek
+                                    dan 3-7 hari kerja untuk wilayah lainnya.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Apakah ada asuransi untuk pengiriman?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, kami menyediakan layanan asuransi optional untuk melindungi paket Anda selama
+                                    pengiriman.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h3 class="h4 mb-4">
+                        <i class="fas fa-truck-fast me-2"></i>ExpressCargo
+                    </h3>
+                    <p class="mb-4">Solusi pengiriman terpercaya untuk bisnis dan individu dengan jangkauan nasional.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right me-2"></i>Beranda</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right me-2"></i>Tentang</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right me-2"></i>Layanan</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right me-2"></i>Testimonial</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2"></i>Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="mb-4">Layanan Kami</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fas fa-box me-2"></i>Regular Delivery</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast me-2"></i>Express Delivery</a></li>
+                        <li><a href="#"><i class="fas fa-truck-loading me-2"></i>Cargo Service</a></li>
+                        <li><a href="#"><i class="fas fa-warehouse me-2"></i>Warehousing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="mb-4">Hubungi Kami</h5>
+                    <div class="contact-info">
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            Jl. Contoh No. 123, Jakarta, Indonesia
+                        </p>
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-3"></i>
+                            +62 123 4567 890
+                        </p>
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope me-3"></i>
+                            info@expresscargo.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="footer-divider">
+                        <div class="d-md-flex justify-content-between align-items-center text-center text-md-start">
+                            <p class="mb-md-0">© 2025 ExpressCargo. All rights reserved.</p>
+                            <div class="footer-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+
+            setTimeout(() => {
+                alert('Terima kasih! Pesan Anda telah terkirim.');
+                this.reset();
+                button.disabled = false;
+                button.innerHTML = originalText;
+            }, 1500);
+        });
+
+        function scrollToContactForm() {
+            document.getElementById('contact-form').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

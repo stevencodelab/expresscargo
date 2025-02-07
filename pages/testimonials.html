@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - ExpressCargo</title>
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+
+    <!-- Icon -->
+    <link rel="icon" type="images/png" href="../assets/images/icon/icon.png">
+
+    <!-- Custom CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/testimonials.css">
+</head>
+
+<body>
+    <!-- Navbar (Same as About page) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="fas fa-truck-fast me-2"></i>ExpressCargo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="testimonials.html">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="testimonial-hero">
+        <i class="fas fa-quote-left quote-icon quote-left"></i>
+        <i class="fas fa-quote-right quote-icon quote-right"></i>
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h1 class="fw-bold display-4 mb-4">Kisah Sukses Pelanggan Kami</h1>
+                    <p class="lead mb-4">Temukan mengapa ribuan bisnis mempercayakan logistik mereka pada ExpressCargo
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn btn-light px-4 py-3 rounded-pill">
+                            <i class="fas fa-play-circle me-2"></i>Tonton Cerita
+                        </button>
+                        <button class="btn btn-outline-light px-4 py-3 rounded-pill">
+                            <i class="fas fa-star me-2"></i>Baca Ulasan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <!-- E-commerce Testimonial -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="../assets/images/team/team-4.webp" alt="Sarah Johnson" class="client-image">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Sarah Johnson</h5>
+                                    <p class="mb-0 text-muted">CEO, Fashion Store</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"ExpressCargo telah mengubah cara kami mengirim produk fashion. Pengiriman
+                                tepat waktu dan pelayanan profesional membuat pelanggan kami sangat puas."</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted">Fashion & E-commerce</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B2B Testimonial -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="../assets/images/team/team-2.jpg" alt="Michael Chen" class="client-image">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Michael Chen</h5>
+                                    <p class="mb-0 text-muted">Logistics Manager, Tech Corp</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"Sistem tracking yang akurat dan layanan B2B yang handal membuat operasional
+                                bisnis kami lebih efisien."</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted">B2B Solutions</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SME Testimonial -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="../assets/images/team/team-1.webp" alt="Amanda Peters" class="client-image">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Amanda Peters</h5>
+                                    <p class="mb-0 text-muted">Owner, Local Artisan</p>
+                                </div>
+                            </div>
+                            <p class="mb-3">"Sebagai UKM, layanan ExpressCargo sangat terjangkau dan membantu bisnis
+                                kami berkembang ke pasar yang lebih luas."</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted">Small Business</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Stories Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Video Testimonial</h2>
+            <div class="row g-4">
+                <!-- E-commerce Success Story -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="video-testimonial">
+                        <img src="../assets/images/testimonials/thumbnail.jpg" alt="E-commerce Success"
+                            class="img-fluid">
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h5 class="mb-1">Sukses E-commerce</h5>
+                            <p class="mb-0 small">Fashion Store Success Story</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B2B Success Story -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-testimonial">
+                        <img src="../assets/images/testimonials/thumbnail.jpg" alt="B2B Success" class="img-fluid">
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h5 class="mb-1">B2B Excellence</h5>
+                            <p class="mb-0 small">Tech Corp Partnership Story</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SME Success Story -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-testimonial">
+                        <img src="../assets/images/testimonials/thumbnail.jpg" alt="SME Success" class="img-fluid">
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <h5 class="mb-1">UKM Growth Story</h5>
+                            <p class="mb-0 small">Local Business Expansion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h3 class="h4 mb-4">
+                        <i class="fas fa-truck-fast me-2"></i>ExpressCargo
+                    </h3>
+                    <p class="mb-4">Solusi pengiriman terpercaya untuk bisnis dan individu dengan jangkauan nasional.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right me-2"></i>Beranda</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right me-2"></i>Tentang</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right me-2"></i>Layanan</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right me-2"></i>Testimonial</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right me-2"></i>Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="mb-4">Layanan Kami</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="#"><i class="fas fa-box me-2"></i>Regular Delivery</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast me-2"></i>Express Delivery</a></li>
+                        <li><a href="#"><i class="fas fa-truck-loading me-2"></i>Cargo Service</a></li>
+                        <li><a href="#"><i class="fas fa-warehouse me-2"></i>Warehousing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="mb-4">Hubungi Kami</h5>
+                    <div class="contact-info">
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            Jl. Contoh No. 123, Jakarta, Indonesia
+                        </p>
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone me-3"></i>
+                            +62 123 4567 890
+                        </p>
+                        <p class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope me-3"></i>
+                            info@expresscargo.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="footer-divider">
+                        <div class="d-md-flex justify-content-between align-items-center text-center text-md-start">
+                            <p class="mb-md-0">© 2025 ExpressCargo. All rights reserved.</p>
+                            <div class="footer-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/testimonials.js"></script>
+</body>
+
+</html>
